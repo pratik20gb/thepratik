@@ -3,15 +3,20 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            
         }
 
+        ::selection {
+  background-color: black; /* Highlight background color */
+  color: gold;            /* Highlight text color */
+}
         body {
             font-family: 'Courier New', monospace;
-            background: #fafafa;
+            background: black;
             background-image: 
                 radial-gradient(circle at 1px 1px, rgba(0,0,0,0.03) 1px, transparent 0);
             background-size: 20px 20px;
-            color: #333;
+            color: whitesmoke;
             line-height: 1.6;
             overflow-x: hidden;
         }
@@ -58,7 +63,7 @@
         }
 
         nav a {
-            color: #333;
+            color: gold;
             text-decoration: none;
             font-size: 0.9rem;
             position: relative;
@@ -66,7 +71,7 @@
         }
 
         nav a:hover {
-            color: #000;
+            color: silver;
         }
 
         nav a::after {
@@ -102,14 +107,14 @@
         .section-title {
             font-size: 1.1rem;
             margin-bottom: 2rem;
-            color: #000;
+            color: gold;
             font-weight: 400;
         }
 
         /* About */
         .about-text {
             font-size: 0.95rem;
-            color: #555;
+            color: silver;
             max-width: 600px;
             margin: 0 auto;
             /* text-align: center; */
@@ -124,34 +129,9 @@
             text-align: center;
         }
 
-        .skill-category {
-            background: #fdfdfd;
-            padding: 1rem;
-            border: 1px solid #eee;
-            border-radius: 4px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-        }
-
-        .skill-category h4 {
-            font-size: 0.95rem;
-            margin-bottom: 0.8rem;
-            color: #000;
-            font-weight: 500;
-        }
-
-        .skill-category ul {
-            list-style: none;
-        }
-
-        .skill-category li {
-            font-size: 0.85rem;
-            color: #666;
-            margin-bottom: 0.3rem;
-        }
         
-        .skill-category li:last-child {
-            margin-bottom: 0;
-        }
+
+        
 
         /* Projects */
         .project {
@@ -159,12 +139,12 @@
             justify-content: space-between;
             align-items: flex-start;
             padding: 1.5rem 0;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid silver;
             transition: background 0.3s ease;
         }
 
         .project:hover {
-            background: rgba(0,0,0,0.02);
+            background: brown;
             margin: 0 -1rem;
             padding-left: 1rem;
             padding-right: 1rem;
@@ -178,17 +158,18 @@
             font-size: 1rem;
             font-weight: 400;
             margin-bottom: 0.3rem;
+            color: gold;
         }
 
         .project-info p {
             font-size: 0.85rem;
-            color: #666;
+            color: lightyellow;
             margin-bottom: 0.5rem;
         }
 
         .project-tech {
             font-size: 0.8rem;
-            color: #888;
+            color: white;
         }
         
         .project-links {
@@ -197,21 +178,17 @@
         }
 
         .project-links a {
-            color: #007bff; /* A subtle blue for links */
+            color:gold; 
             text-decoration: none;
             margin-right: 0.8rem;
             transition: color 0.3s ease;
         }
 
         .project-links a:hover {
-            color: #0056b3;
+            color:whitesmoke;
         }
 
-        .project-year {
-            font-size: 0.85rem;
-            color: #999;
-            font-weight: 300;
-        }
+        
 
         /* Contact */
         .contact-info {
@@ -219,7 +196,7 @@
         }
 
         .contact-info a {
-            color: #333;
+            color:lightyellow;
             text-decoration: none;
             font-size: 0.9rem;
             margin: 0 1rem;
@@ -227,7 +204,7 @@
         }
 
         .contact-info a:hover {
-            color: #000;
+            color: gold;
         }
 
         /* Footer */
